@@ -9,11 +9,22 @@ def calculate_rms(numbers):
 
     Returns:
         float: The RMS value of the input numbers.
+
+    Raises:
+        ValueError: If the input list is empty.
     """
     if len(numbers) == 0:
-        return 0.0
+        raise ValueError("Input list cannot be empty")
 
     squared_values = [x ** 2 for x in numbers]
     mean_of_squares = np.mean(squared_values)
-    rms = np.sqrt(mean_of_squares)
-    return rms
+    return np.sqrt(mean_of_squares)
+
+
+def print_hello():
+    """
+    This function prints the string "Hello, world!" to the console.
+    It doesn't take any parameters or return any value.
+
+    """
+    print("Hello, world!")
