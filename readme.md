@@ -4,9 +4,16 @@ The `pyproject.toml` file is a modern approach to specifying project metadata an
 
 In this guide, we'll walk through creating a `pyproject.toml` file and a `setup.cfg` file step by step.
 
+This README provides a comprehensive overview of the package that this project pertains to. If you're a newcomer to the concept of a package, or if you seek to broaden your understanding, you're welcome to visit the example directory. The tutorial in there is created with the intent to demonstrate the function and structure of a package. Taking the time to explore it will be beneficial
+```
+mypackage/
+ └── examples/ # THERE !
+     ├── 0_course_what_is_a_package.md
+     ├── 1_Tuto_packaging_1.md
+     └── example.py
+```
 ## Table of Contents
 
-## Table of Contents
 - [1 Project Structure](#1-project-structure)
   - [1.1 Writing pyproject.toml](#11-writing-pyprojecttoml)
   - [1.2 Writing setup.cfg](#12-writing-setupcfg)
@@ -16,7 +23,6 @@ In this guide, we'll walk through creating a `pyproject.toml` file and a `setup.
   - [1.6 README.md Example (optional but advised)](#16-readmemd-example--optional-but-advised)
   - [1.7 License](#17-license)
 - [2 Installing a Python Package](#2Installing-a-Python-Package)
-
 - [Conclusion](#conclusion)
 
 ## 1 Project Structure
@@ -102,6 +108,8 @@ Note don't be confused that in src/'mypackage', 'mypackage' is the import packag
 
 ### 1.4 exemple folder 
 The examples folder is optional but recommended. It can contain example scripts that demonstrate how to use your package. For instance, you can have an example.py file showcasing your package's functionality.
+The current examples folder is both for learners to understand what a package is and how to create 
+one. The tutorials inside this folder is the main course on how to package.
 
 
 ### 1.5 Purpose of the 'tests' Directory in Python Packages (optional)
@@ -159,11 +167,8 @@ You can also install your package from a local source in development mode. This 
 If you prefer using PyCharm, you can also install the package within a virtual environment. Follow these steps:
 
 1. Open PyCharm and your project.
-
 2. Go to 'Python Packages' within the PyCharm IDE.
-
 3. Choose 'Add Package' and then 'From disk.'
-
 4. Navigate to your package folder and select it.
 
 By following these methods, you can install your Python package using 'pip' and test its functionality. This allows you to verify that your package works as expected before sharing it with others or deploying it in different environments.
