@@ -36,13 +36,13 @@ mypackage/
  ├── LICENSE (optional but advised)
  ├── README.md (optional but highly recommended)
  ├── tests/ (optional but advised)
- └── src/ (mandatory)
-        ├── mypackage/
-        │   ├── __init__.py (minimum)
-        │   ├── moduleO.py (minimum)
-        │   ├── subpackages1/
-        │   │   ├── __init__.py
-        │   │   ├── module1.py
+ ├── src/ (mandatory)
+ │      ├── mypackage/
+ │      │   ├── __init__.py (minimum)
+ │      │   ├── moduleO.py (minimum)
+ │      │   ├── subpackages1/
+ │      │   │   ├── __init__.py
+ │      │   │   ├── module1.py
  └── examples/
      └── example.py
 ```
