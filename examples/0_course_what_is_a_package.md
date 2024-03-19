@@ -31,14 +31,12 @@ Before diving into this tutorial, ensure you meet the following prerequisites to
 - **Virtual Environment**: Knowledge of using virtual environments in Python is recommended. Virtual environments allow you to manage dependencies for different projects separately. If you're not familiar with virtual environments, the [Python Packaging Authority's guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) is a comprehensive resource to get started.
 
 - **Text Editor or IDE**: You'll need a text editor or an Integrated Development Environment 
-  (IDE) to write your code. Popular choices include [Visual Studio Code](https://code.
-  visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), [Sublime Text]
-  (https://www.sublimetext.com/) or spyder.
+  (IDE) to write your code. Popular choices include [Visual Studio Code](https://code.visualstudio.com/), [PyCharm](https://www.jetbrains.com/pycharm/), [Sublime Text]
+  (https://www.sublimetext.com/) or Spyder.
 
 - **Command Line Basics**: Basic familiarity with the command line or terminal. You'll be using 
   the command line to execute Python scripts, manage virtual environments, and install packages.
-  If you're new to using the command line, [Codecademy's Command Line tutorial](https://www.
-  codecademy.com/learn/learn-the-command-line) offers a beginner-friendly introduction.
+  If you're new to using the command line, [Codecademy's Command Line tutorial](https://www.codecademy.com/learn/learn-the-command-line) offers a beginner-friendly introduction.
 
 Ensure that your setup meets these requirements before proceeding to the next section of the 
 tutorial.  This will help in avoiding unnecessary interruptions and will make the learning 
@@ -84,10 +82,9 @@ my_package/ (package)
 - `moduleA.py` and `moduleB.py` are modules.
 - `subpackage` is a sub-package of `my_package`, also containing its own `__init__.py` file.
 
-This structure allows for modular development and organization of larger Python projects, facilitating reuse and namespace management.- A high-level directory structure diagram based on your project layout.
+This structure allows for modular development and organization of larger Python projects, 
+facilitating reuse and namespace management.
 
-#### Screenshots:
-- Example of `pyproject.toml` and `setup.cfg` with highlighted sections to explain their roles.
 
 ### 3. Step-by-Step Guide: Getting Started 
 
@@ -106,12 +103,11 @@ directly download the project on the provided link.
 
 #### 3.2 Environment Setup 
 
-#### 3.2 Environment Setup
 ##### 3.2.1 Environment Setup (PyCharm based):
 For those using PyCharm, setting up a virtual environment is straightforward:
 
 1. Open PyCharm and open  your folder as a new project.
-2.  navigate to `File > Settings`, Under `Project: <YourProjectName>`, select `Project Interpreter`.
+2. Navigate to `File > Settings`, under `Project: <YourProjectName>`, select `Project Interpreter`.
 3. Click on the gear icon, then `Add`.
 4. In the left pane of the dialog that appears, select `Virtualenv Environment`. Then, choose `New environment`.
 5. Specify the location for your new virtual environment or accept the default. Ensure the base interpreter is set to the Python version you intend to use.
@@ -135,7 +131,7 @@ pip install .
 ```
 This command tells pip to install the package found in the current directory.
 
-##### 3.3.1 Installing the Python Package (PyCharm based):
+##### 3.3.2 Installing the Python Package (PyCharm based):
 PyCharm Package Management: PyCharm also offers a graphical interface for managing packages 
 via :
 - Preferences > Project: YourProjectName > Python Interpreter. Here, you can see a list of 
@@ -199,6 +195,6 @@ Direct Import ensures a clean and maintainable codebase by capitalizing on the s
 
 This method promotes best practices in software development, making your code more robust, easier to manage, and scalable.
 
-##### What you have learn :
+##### What you have learned :
 - **Package Installation**: Learned how to properly install a Python package, ensuring it's correctly integrated into the development environment.
 - **Utilizing Imports**: Mastered the use of import statements to access and utilize functions from installed packages, enhancing code functionality and modularity.

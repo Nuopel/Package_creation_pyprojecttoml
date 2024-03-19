@@ -12,6 +12,8 @@ mypackage/
      ├── 1_Tuto_packaging_1.md
      └── example.py
 ```
+
+
 ## Table of Contents
 
 - [1 Project Structure](#1-project-structure)
@@ -93,9 +95,11 @@ where = src
 This `setup.cfg` file specifies project metadata and build configuration for 'mypackage' in the traditional packaging setup.
 
 ### 1.3 src folder
-The src folder is where your package's source code resides. It follows the "src layout" best practice.
+The src folder is a conventional structure in Python projects, adopting the "src layout" best practice.
+It serves as the primary directory where the source code of your package resides.
 
-Note don't be confused that in src/'mypackage', 'mypackage' is the import package name  in code and does not need to be the same 'name =' in setup.cfg which is used for packaging and publishing your Python package on package repositories like PyPI. No need to think if you take both the same though.
+Inside the src folder, you find a subdirectory that represents your package, typically named after the package itself. This naming is crucial because it's the identifier you'll use in your code when importing modules from this package.
+
 ```
   ── src/
         ├── mypackage/ # Name of the package you will use in 'import mypackage'
@@ -105,11 +109,16 @@ Note don't be confused that in src/'mypackage', 'mypackage' is the import packag
         │   │   ├── __init__.py
         │   │   ├── module1.py # Example module within a subpackage.
 ```
+It's important to note that the package name in the src directory does not have to match the package name specified in setup.cfg, although they often do for simplicity. The name in setup.cfg is used for distribution and should be unique on repositories like PyPI, while the directory name in src is used within your code for imports.
 
-### 1.4 exemple folder 
-The examples folder is optional but recommended. It can contain example scripts that demonstrate how to use your package. For instance, you can have an example.py file showcasing your package's functionality.
+### 1.4 example folder 
+The examples folder is optional but recommended. 
+It can contain example scripts that demonstrate how to use your package. 
+For instance, you can have an example.py file showcasing your package's functionality.
+
 The current examples folder is both for learners to understand what a package is and how to create 
-one. The tutorials inside this folder is the main course on how to package.
+one. The tutorials inside this folder are presenting what is a package in details and 
+step-by-step tutorials on how to create and use a package inside python.
 
 
 ### 1.5 Purpose of the 'tests' Directory in Python Packages (optional)
